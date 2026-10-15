@@ -1,0 +1,9 @@
+if (currency === "USD") {
+    let result = amount * CurrencyRates.USD; 
+    console.log(result + " EUR");
+} else if (currency === "EUR") {
+    let result = amount / CurrencyRates.USD; 
+    console.log(result + " USD");
+}else {
+    console.log("unsupported currency");
+}
