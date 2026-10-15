@@ -1,0 +1,96 @@
+
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dceeff, #f4f8fc);
+    color: #263b50;
+
+    /* Place the weather card in the centre of the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+/* Main weather card */
+.weather-card {
+    width: 100%;
+    max-width: 480px;
+    padding: 36px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(44, 76, 110, 0.12);
+}
+
+/* City heading */
+h1 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 32px;
+    color: #244d70;
+}
+
+/* Forecast time */
+#weather-time {
+    margin-bottom: 28px;
+    color: #7b8da0;
+    font-size: 14px;
+}
+
+/* Temperature and rain information */
+.weather-details {
+    padding: 20px;
+    background-color: #f2f7fc;
+    border-radius: 16px;
+}
+
+.weather-details p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+/* Make the temperature stand out */
+#temperature {
+    color: #247bb5;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Highlight the chance of rain */
+#rain {
+    color: #397fa8;
+    font-weight: bold;
+}
+
+/* Weather message */
+#weather-message {
+    margin-top: 24px;
+    margin-bottom: 0;
+    padding: 14px;
+    background-color: #e9f5ee;
+    color: #397653;
+    border-radius: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Adjust the layout for smaller screens */
+@media (max-width: 480px) {
+    .weather-card {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    #temperature {
+        font-size: 24px;
+    }
+}
